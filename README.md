@@ -82,5 +82,5 @@ Tunneling via socket from client to server is in backlog for future version (wil
     7.Fix code to run on Windows environment
     8.Fix possible bugs, prepare 1.0 release candidate
 
-###Post issues and suggestions here at [mrvictorn:beth github repo](https://github.com/mrvictorn/beth/issues)
+###Post issues and suggestions here at [mrvictorn-beth github repo](https://github.com/mrvictorn/beth/issues)
  

@@ -74,7 +74,7 @@ class EthereumContracts extends EventEmitter
     self = @
     self.systemContracts.find({}).observeChanges
         added: (id, doc) ->
-          console.log 'added: ',doc
+          #console.log 'added: ',doc
           self.contractObjConstructor doc
     if Meteor.isServer
       Meteor.publish 'deployedContracts', ()->
@@ -181,7 +181,7 @@ if Meteor.isServer #serverside magic goes below
             contracts2Check = []
             contracts2Check.push file.contracts for file in data
             contracts2Check = _.flatten contracts2Check
-            console.log contracts2Check
+            #console.log contracts2Check
             contractNames = []
             contracts2Check.forEach (oContract,i) ->
               contractNames.push oContract.name
@@ -194,7 +194,7 @@ if Meteor.isServer #serverside magic goes below
             contracts2BeDeployed = _.filter contracts2Check, (oContract) ->
               return not _.findWhere oldContracts, {codeHash: oContract.codeHash, name: oContract.name }
 
-            console.log contracts2BeDeployed
+            #console.log contracts2BeDeployed
             #check here for changed MD5(source) changed and not deployed contracts
             contracts2BeDeployed.forEach (oContract)->
               self.deployContract oContract ,(err,deployedContract) ->
