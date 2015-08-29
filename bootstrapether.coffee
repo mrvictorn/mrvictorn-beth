@@ -1,3 +1,11 @@
+###
+  Package Beth main code
+  author: Viktor Nesterenko <v@vkafe.org>
+  license: "MIT"
+  August, 2015
+###
+
+
 ##TODO check path for production enviroment
 ##TODO alter path for Windows enviroment
 
