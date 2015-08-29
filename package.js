@@ -1,12 +1,8 @@
 Package.describe({
   name: 'mrvictorn:beth',
   version: '0.0.1',
-  // Brief, one-line summary of the package.
-  summary: 'Bootstraps Ethereum solidity contracts',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
+  summary: 'Bootstrap Your Meteor Dapp with Ethereum Contracts autodeployment',
+  git: 'https://github.com/mrvictorn/mrvictorn-beth.git',
   documentation: 'README.md'
 });
 
