@@ -49,9 +49,11 @@ Tunneling via socket from client to server is in backlog for future version (wil
  
 ##### Server/Client side events: 
 
-    EthContract.on 'nodeConnected', callback() # called on successful connect to Ethereum node 
+    EthContract.on 'nodeConnected', callback() 
+    # called on successful connect to Ethereum node 
        
-    EthContract.on 'nodeConnectError', callback() # called on connection error, 
+    EthContract.on 'nodeConnectError', callback() 
+    # called on connection error, 
     # here You can try to reconnect or use other nodeUrl by call
         EthContracts.Bootstrap newNodeUrl
         
@@ -69,7 +71,7 @@ Tunneling via socket from client to server is in backlog for future version (wil
     EthContract.on 'deployError', callback(err) # called on deployment error, 
     # err contains short description of error
     # details will be added in future releases, possibly at 1.0-RC
-          
+
 
 ### TODO backlog
     
@@ -83,5 +85,5 @@ Tunneling via socket from client to server is in backlog for future version (wil
     7.Fix code to run on Windows environment
     8.Fix possible bugs, prepare 1.0 release candidate
 
-### Post issues and suggestions here at [mrvictorn-beth github repo](https://github.com/mrvictorn/beth/issues)
+### Post issues and suggestions here [mrvictorn-beth github repo](https://github.com/mrvictorn/mrvictorn-beth/issues)
  
