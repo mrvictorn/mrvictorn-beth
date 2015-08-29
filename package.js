@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mrvictorn:beth',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'Bootstrap Your Meteor Dapp with Ethereum Contracts autodeployment',
   git: 'https://github.com/mrvictorn/mrvictorn-beth.git',
   documentation: 'README.md'
