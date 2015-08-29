@@ -1,5 +1,6 @@
-#Package Beth
-##Bootstrap Your Meteor Dapp with Ethereum Contracts autodeployment 
+# Package Beth
+## Bootstrap Your Meteor Dapp with Ethereum Contracts autodeployment 
+
 ### Usage of package:
 
     meteor add mrvictorn:beth
@@ -33,9 +34,9 @@ because actually in 99,9% of cases we don`t have an Ethereum node running on cli
 
 Tunneling via socket from client to server is in backlog for future version (will come in 1.0)
 
-###Beth API:
+### Beth API:
 
-####EthContract object appears in global namespace, to init bootstrap just call
+#### EthContract object appears in global namespace, to init bootstrap just call
 
     EthContract.bootstrap nodeAddr, contactsDirPath, deployGas
     # default params values:
@@ -44,9 +45,9 @@ Tunneling via socket from client to server is in backlog for future version (wil
     # contactsDirPath = 'contracts' # actually 'contracts' must be placed inside private/ folder by Meteors folder convention
     # deployGas = 400000 # define Yor expected gas for deployment
     
-####EthContract emits some useful events, Your code can subscribe to:
+#### EthContract emits some useful events, Your code can subscribe to:
  
-#####Server/Client side events: 
+##### Server/Client side events: 
 
     EthContract.on 'nodeConnected', callback() # called on successful connect to Ethereum node 
        
@@ -59,7 +60,7 @@ Tunneling via socket from client to server is in backlog for future version (wil
     # contract.deployVersion == deployed source version number, is incremented by every next deployment
  
 
-#####Server side only events: 
+##### Server side only events: 
 
     EthContract.on 'compileError', callback(err) # called on file compile errors 
     # err contains short description of error
@@ -70,7 +71,7 @@ Tunneling via socket from client to server is in backlog for future version (wil
     # details will be added in future releases, possibly at 1.0-RC
           
 
-###TODO backlog
+### TODO backlog
     
     0.Write extensive documentation, sample demo
     1.Write tests
@@ -82,5 +83,5 @@ Tunneling via socket from client to server is in backlog for future version (wil
     7.Fix code to run on Windows environment
     8.Fix possible bugs, prepare 1.0 release candidate
 
-###Post issues and suggestions here at [mrvictorn-beth github repo](https://github.com/mrvictorn/beth/issues)
+### Post issues and suggestions here at [mrvictorn-beth github repo](https://github.com/mrvictorn/beth/issues)
  
