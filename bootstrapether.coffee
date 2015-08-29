@@ -49,7 +49,7 @@ class EthereumContracts extends EventEmitter
   getContract: (contractName,callback) =>
     unless contractName and _.isString contractName
       return callback 'Error contractName is undefined'
-    oContract = deployedContracts[contractName]
+    oContract = @deployedContracts[contractName]
     if oContract then return callback null, oContract
     @once "contractReady#{contractName}", (contract)->
       callback null, contract

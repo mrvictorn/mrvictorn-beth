@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mrvictorn:beth',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Bootstrap Your Meteor Dapp with Ethereum Contracts autodeployment',
   git: 'https://github.com/mrvictorn/mrvictorn-beth.git',
   documentation: 'README.md'
@@ -10,8 +10,8 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
   api.use('mongo');
   api.use('coffeescript');
-  api.use('raix:eventemitter');
-  api.use('ethereum:web3');
+  api.use('raix:eventemitter@0.1.3');
+  api.use('ethereum:web3@0.12.2');
   api.addFiles(['bootstrapether.coffee','global.js']);
   api.export('EthContracts');
 });
