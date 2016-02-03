@@ -19,7 +19,7 @@ Your code will be informed by callback just after successful deployment.
 To use EthContracts on both client and server add
 
         Meteor.startup ()->
-            EthContracts.Bootstrap nodeUrl
+            EthContracts.bootstrap nodeUrl
         #then where ever You need contact object, just call
         EthContracts.getContract 'MySuperContract' , callback 
         # callback = (err,contract)->  # node style callback parameters used here
@@ -49,10 +49,10 @@ Tunneling via socket from client to server is in backlog for future version (wil
  
 ##### Server/Client side events: 
 
-    EthContract.on 'nodeConnected', callback() 
+    EthContract.on 'nodeConnected', callback
     # called on successful connect to Ethereum node 
        
-    EthContract.on 'nodeConnectError', callback() 
+    EthContract.on 'nodeConnectError', callback
     # called on connection error, 
     # here You can try to reconnect or use other nodeUrl by call
         EthContracts.Bootstrap newNodeUrl
